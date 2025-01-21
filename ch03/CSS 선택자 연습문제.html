@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 선택자 연습문제</title>
+        <style>
+            /*1*/
+            header h1 {
+                color: #4a90e2;
+            }
+
+            /*2*/
+            header {
+                background-color: #f5f5f5;
+            }
+
+            /*3*/
+            span.highlight {
+                color: f39c12;
+            }
+            /*4*/
+            nav a {
+                color: #e74c3c;
+            }
+
+            /*5*/
+            section.intro {
+                background-color: #e8f4f8;
+            }
+
+            /*6*/
+            h2.title {
+                color: #27ae60;
+            }
+
+            /*7*/
+            div.article:first-child {
+                background-color: #bdc3c7;
+            }
+
+            /*8*/
+            div.article:nth-child(2) {
+                background-color: #fad7a0;
+            }
+
+            /*9*/
+            div.article p {
+                color: #9b59b6;
+            }
+
+            /*10*/
+            section {
+                border: 1px dashed #e74c3c;
+            }
+
+            /*11*/
+            footer a {
+                color: #34495e;
+            }
+
+            /*12*/
+            header li:first-child {
+                border: 1px solid #111;
+            }
+
+            /*13*/
+            header li:last-child {
+                border: 1px solid #111;
+            }
+
+            /*14*/
+            header nav ul li {
+                background-color: #d5dbdb;
+            }
+
+            /*15*/
+            header nav ul li:first-child a {
+                color: #00f;
+            }
+
+            /*16*/
+            header nav ul li:nth-child(2) a {
+                color: #0f0;
+            }
+
+            /*17*/
+            body section {
+                border: 1px solid #bdc3c7;
+            }
+
+            /*18*/
+            section.content h2 {
+                color: #1f618d;
+            }
+
+            /*19*/
+            header li {
+                list-style-type: square;
+            }
+
+            /*20*/
+            footer a:nth-of-type(1) {
+                color: #27ae60;
+            }
+
+            /*21*/
+            section:first-of-type {
+                border: 2px dashed #16a085;
+            }
+
+            /*22*/
+            section:last-of-type {
+                background-color:#bbe1ee;
+            }
+            
+            /*23*/
+            p:first-of-type {
+                color: #d35400;
+            }
+
+            /*24*/
+            p:last-of-type {
+                font-style: italic;
+                color: #2980B9;
+            }
+            /*25*/
+            .title + p {
+                background-color: #e8f4f8;
+            }
+
+            /*26*/
+            .title ~ * {
+                color: #8e44ad;
+            }
+
+            /*27*/
+            h2:first-of-type {
+                color: #e67e22;
+            }
+
+            /*28*/
+            ol li:nth-child(2n+1) {
+                color: orange;
+            }
+
+            /*29*/
+            .intro:hover {
+                background-color: #e74c3c;
+            }
+
+            /*30*/
+            footer a:last-child::after {
+                content: '®';
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Selector Practice</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="intro">
+            <p>Hello, <span class="highlight">world</span>!</p>
+        </section>
+        <section class="content">
+            <div class="article">
+                <h2 class="title">Article 1</h2>
+                <p>Content of article 1</p>
+                <ol>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ol>
+            </div>
+            <div class="article">
+                <h2 class="title">Article 2</h2>
+                <p>Content of article 2</p>
+            </div>
+        </section>
+        <footer>
+            <p>Footer content here.</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Copyright</a>
+        </footer>
+        
+    </body>
+</html>
