@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>foodshop</title>
+
+        
+
+        <style>
+
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            input, textarea {outline: none;}
+
+            #container {
+                width: 100%;
+                height: 100%;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            /*헤더*/
+            header {
+                width: 100%;
+                height: auto;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .top {
+                width: 100%;
+                height: 35px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .top div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid blue;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .top div a {
+                float: right;
+            }
+            .middle {
+                width: 100%;
+                height: 100px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .middle article {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid blue;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .bot {
+                width: 100%;
+                height: 45px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .bot div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid blue;
+                box-sizing: border-box;
+                margin: 0 auto;  
+            }
+
+
+
+
+            /*메인*/
+
+            main {
+                width: 100%;
+                height: auto;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .slider {
+                width: 100%;
+                height: 350px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .slider div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .go {
+                width: 100%;
+                height: 520px;
+                border: 1px solid blue;
+                box-sizing: border-box;
+            }
+            .go div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: 0 auto;
+                padding: 30px 10px;
+            }
+            .go div article {
+                float: left;
+                border: 1px solid gray;
+                box-sizing: border-box;
+            }
+            .go div article:nth-of-type(1) {
+                width: 412px;
+                height: 450px;
+                border: 1px solid black;
+                
+            }
+            .go div article:nth-of-type(2) {
+                width: 322px;
+                height: 220px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                margin-left: 10px;
+                float: left;
+
+            }
+            .go div article:nth-of-type(3) {
+                width: 322px;
+                height: 220px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: right;
+            }
+            .go div article:nth-of-type(4) {
+                width: 322px;
+                height: 220px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                margin-left: 10px;
+                float: left;
+                margin-top: 10px;
+            }
+            .go div article:nth-of-type(5) {
+                width: 322px;
+                height: 220px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: right;
+                margin-top: 10px;
+            }
+            .one {
+                width: 100%;
+                height: 170px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .one div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .healthy {
+                width: 100%;
+                height: 520px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+                
+            }
+            .healthy div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .healthy div article {
+                width: 273px;
+                height: 308px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: left;
+                
+            }
+            .premium {
+                width: 100%;
+                height: 170px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .premium div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .seafood {
+                width: 100%;
+                height: 520px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .seafood div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+
+
+            
+
+            /*푸터*/
+            footer {
+                width: 100%;
+                height: auto;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+            .manage {
+                width: 100%;
+                height: 45px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .manage div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .info {
+                width: 100%;
+                height: 170px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .info div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div>
+                    <ul>
+                        <li>로그인</li>
+                        <li>| 마이페이지</li>
+                        <li>| 관심상품(0)</li>
+                        <li>| 장바구니(0)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middle">
+                <article>
+
+                </article>
+            </div>
+            <div class="bot">
+                <div>
+                    <ul>
+                        <li>채소/과일/곡류</li>
+                        <li>수산</li>
+                        <li>정육/달걀</li>
+                        <li>면/양념/소스</li>
+                        <li>음료/주류</li>
+                        <li>냉장/냉동식품</li>
+                        <li>캔/통조림</li>
+                        <li>가공/간편식품</li>
+                        <li>생활잡화</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="slider">
+                <div>
+
+                </div>
+            </section>
+
+            <section class="go">
+                <div>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </div>
+            </section>
+
+            <section class="one">
+                <div>
+
+                </div>
+            </section>
+
+            <section class="healthy">
+                <div>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </div>
+            </section>
+
+            <section class="premium">
+                <div>
+
+                </div>
+            </section>
+
+            <section class="seafood">
+                <div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="manage">
+                <div>
+
+                </div>
+            </div>
+
+            <div class="info">
+                <div>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
