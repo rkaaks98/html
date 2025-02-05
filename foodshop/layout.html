@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>foodshop</title>
+
+        
+
+        <style>
+
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            input, textarea {outline: none;}
+
+            #container {
+                width: 100%;
+                height: 100%;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+
+
+
+            /*헤더*/
+            header {
+                width: 100%;
+                height: auto;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+            .top {
+                width: 100%;
+                height: 35px;
+                border: 1px solid #777;
+                box-sizing: border-box;
+            }
+            .top div {
+                width: 1100px;
+                height: 100%;
+                
+                box-sizing: border-box;
+                margin: 0 auto;
+                padding-top: 6px;
+            }
+            .top div p {
+                float: right;
+            }
+
+
+
+
+            .middle {
+                width: 100%;
+                height: 100px;
+                
+                box-sizing: border-box;
+            }
+            .middle article {
+                width: 1100px;
+                height: 100%;
+                
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .middle article a:nth-of-type(1){
+                position: relative;
+                left: 10px;
+                top: 35px;
+            }
+            .middle article a:nth-of-type(1) span:nth-of-type(1) {
+                color: orangered;
+                font-size: 15px;
+            }
+            .middle article a:nth-of-type(2) {
+                position: relative;
+                left: 137px;
+                top: 20px;
+            }
+            .middle article a:nth-of-type(3) {
+                position: relative;
+                left: 280px;
+                top: 16px;
+            }
+
+
+
+            .bot {
+                width: 100%;
+                height: 55px;
+               
+                box-sizing: border-box;
+                background-color: #40382e; 
+            }
+            .bot div {
+                width: 1100px;
+                height: 100%;
+                
+                
+                margin: 0 auto; 
+                
+            }
+            .bot div ul {
+                width: 100%;
+                height: 100%;
+                
+               
+                padding-left: 10px;
+            }
+            .bot div ul li {
+                float: left;
+                width: 11%;
+                height: 100%;
+               
+            }
+            .bot div ul a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 54px;
+                font-size: 15px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .bot div ul a:hover {
+                color: orangered;
+            }
+
+
+
+
+            /*메인*/
+
+            main {
+                width: 100%;
+                height: auto;
+                
+                box-sizing: border-box;
+            }
+            .slider {
+                width: 100%;
+                height: 350px;
+                
+                box-sizing: border-box;
+                background-color: #ffeed4;;
+            }
+            .slider div {
+                width: 1100px;
+                height: 100%;
+                box-sizing: border-box;
+                margin: 0 auto;
+                background-image: url('./images/slider_banner1.jpg')
+            }
+            .go {
+                width: 100%;
+                height: 520px;
+                
+                box-sizing: border-box;
+            }
+            .go div {
+                width: 1100px;
+                height: 100%;
+                
+                box-sizing: border-box;
+                overflow: hidden;
+                margin: 0 auto;
+                padding: 30px 10px;
+            }
+            .go div article {
+                float: left;
+                
+                box-sizing: border-box;
+            }
+            .go div article:nth-of-type(1) {
+                width: 412px;
+                height: 450px;
+                background-image: url('./images/main_go_bg1.png');
+                padding-top: 40px;
+                padding-left: 20px;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(1) a {
+                color: #ff6312;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(2) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 25px;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(2) a {
+                color: white;
+                font-size: 22px;
+
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(3) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(3) a {
+                color: white;
+                font-size: 13px;
+            }
+            .go div article:nth-of-type(1) ul li:nth-of-type(4) {
+                width: 100%;
+                height: 100%;
+            }
+            .go div article:nth-of-type(2) {
+                width: 322px;
+                height: 220px;
+                box-sizing: border-box;
+                margin-left: 10px;
+                float: left;
+                background-image: url('./images/main_go_bg2.png');
+                padding-top: 40px;
+                padding-left: 20px;
+            }
+            .go div article:nth-of-type(2) ul li:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            .go div article:nth-of-type(2) ul li:nth-of-type(1) a {
+                color: #ff6312;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .go div article:nth-of-type(2) ul li:nth-of-type(2) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .go div article:nth-of-type(2) ul li:nth-of-type(2) a {
+                color: black;
+                font-size: 22px;
+            }
+            .go div article:nth-of-type(3) {
+                width: 322px;
+                height: 220px;
+                box-sizing: border-box;
+                float: right;
+                background-image: url('./images/main_go_bg3.png');
+                padding-top: 40px;
+                padding-left: 20px;
+            }
+            .go div article:nth-of-type(3) ul li:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            .go div article:nth-of-type(3) ul li:nth-of-type(1) a {
+                color: #ff6312;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .go div article:nth-of-type(3) ul li:nth-of-type(2) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .go div article:nth-of-type(3) ul li:nth-of-type(2) a {
+                color: white;
+                font-size: 22px;
+            }
+            .go div article:nth-of-type(4) {
+                width: 322px;
+                height: 220px;
+                box-sizing: border-box;
+                margin-left: 10px;
+                float: left;
+                margin-top: 10px;
+                background-image: url('./images/main_go_bg4.png');
+                padding-top: 40px;
+                padding-left: 20px;
+            }
+            .go div article:nth-of-type(4) ul li:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            .go div article:nth-of-type(4) ul li:nth-of-type(1) a {
+                color: #ff6312;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .go div article:nth-of-type(4) ul li:nth-of-type(2) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .go div article:nth-of-type(4) ul li:nth-of-type(2) a {
+                color: white;
+                font-size: 22px;
+            }
+            .go div article:nth-of-type(5) {
+                width: 322px;
+                height: 220px;
+                box-sizing: border-box;
+                float: right;
+                margin-top: 10px;
+                background-image: url('./images/main_go_bg5.png');
+                padding-top: 40px;
+                padding-left: 20px;
+            }
+            .go div article:nth-of-type(5) ul li:nth-of-type(1) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 20px;
+            }
+            .go div article:nth-of-type(5) ul li:nth-of-type(1) a {
+                color: #ff6312;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .go div article:nth-of-type(5) ul li:nth-of-type(2) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .go div article:nth-of-type(5) ul li:nth-of-type(2) a {
+                color: black;
+                font-size: 22px;
+            }
+            .one {
+                width: 100%;
+                height: 190px;
+                background-image: url(./images/oneday_bg.png);
+                box-sizing: border-box;
+                background-position: 50%center;
+            }
+            .one div {
+                width: 1100px;
+                height: 100%;
+                box-sizing: border-box;
+                margin: 0 auto;
+                
+            }
+            .one div a {
+                position: relative;
+                top: 25%;
+            }
+            .healthy {
+                width: 100%;
+                height: 520px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+                
+            }
+            .healthy div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+            }
+            .healthy div article {
+                width: 25%;
+                height: 308px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: left;
+            }
+            .healthy div article img {
+                position: relative;
+                right: 25%;
+            }
+            .premium {
+                width: 100%;
+                height: 170px;
+                border: 1px solid red;
+                box-sizing: border-box;
+            }
+            .premium div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .seafood {
+                width: 100%;
+                height: 520px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .seafood div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .seafood div article {
+                width: 25%;
+                height: 308px;
+                border: 1px solid black;
+                box-sizing: border-box;
+                float: left;
+            }
+
+
+            
+
+            /*푸터*/
+            footer {
+                width: 100%;
+                height: auto;
+                border: 1px solid green;
+                box-sizing: border-box;
+            }
+            .manage {
+                width: 100%;
+                height: 45px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .manage div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            .info {
+                width: 100%;
+                height: 170px;
+                border: 1px solid orangered;
+                box-sizing: border-box;
+            }
+            .info div {
+                width: 1100px;
+                height: 100%;
+                border: 1px solid green;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div>
+                    <p>
+                        <a href="#">로그인 |</a>
+                        <a href="#">마이페이지 |</a>
+                        <a href="#">관심상품(0) |</a>
+                        <a href="#">장바구니(0)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <article>
+                    <a href="#">
+                        <img src="./images/ico_shopping.png" alt="쇼핑로고">
+                        <span>SHOPPING</span>
+                        <span>주문조회 바로가기</span>
+                    </a>
+                    
+                    <a href="#"><img src="./images/header_txt_logo.png" alt="헤더로고"></a>
+                    <a href="#"><img src="./images/header_txt_onday.png" alt="헤더텍스트"></a>
+                </article>
+            </div>
+
+            <div class="bot">
+                <div>
+                    <ul>
+                        <li><a>채소/과일/곡류</a></li>
+                        <li><a>수산</a></li>
+                        <li><a>정육/달걀</a></li>
+                        <li><a>면/양념/소스</a></li>
+                        <li><a>음료/주류</a></li>
+                        <li><a>냉장/냉동식품</a></li>
+                        <li><a>캔/통조림</a></li>
+                        <li><a>가공/간편식품</a></li>
+                        <li><a>생활잡화</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="slider">
+                <div>
+
+                </div>
+            </section>
+
+            <section class="go">
+                <div>
+                    <article>
+                        <ul>
+                            <li><a href="#">생활야채</a></li>
+                            <li><a href="#">1일 1야채<br>
+                            건강한 생활습관</a></li>
+                            <li><a href="#">아삭아삭 건강에도 좋은<br>
+                            야채를 1일 1야채로<br>
+                            생활에 활기를 느껴보세요!</a></li>
+                            <li><a href="#"><img src="./images/main_go_ico.png" alt=""></a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">특별이벤트</a></li>
+                            <li><a href="#">SHOP에서 진행하는<br>
+                            특별이벤트</a></li>
+                            <li><a href="#"><img src="./images/main_go_ico.png" alt=""></a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">하루할인</a></li>
+                            <li><a href="#">오늘의<br>
+                            할인상품!</a></li>
+                            <li><a href="#"><img src="./images/main_go_ico.png" alt=""></a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">SHOP에서 인증하는<br>
+                                프리미엄 상품</a></li>
+                            <li><a href="#"><img src="./images/main_go_ico.png" alt=""></a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">인기상품</a></li>
+                            <li><a href="#">SHOP의<br>
+                            인기상품</a></li>
+                            <li><a href="#"><img src="./images/main_go_ico.png" alt=""></a></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="one">
+                <div>
+                    <a href="#"><img src="./images/oneday_txt.png" alt=""></a>
+                </div>
+            </section>
+
+            <section class="healthy">
+                <div>
+                    <img src="./images/vegetable_tit.png" alt="생활습관">
+                    <article>
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="premium">
+                <div>
+
+                </div>
+            </section>
+
+            <section class="seafood">
+                <div>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                    <article></article>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="manage">
+                <div>
+
+                </div>
+            </div>
+
+            <div class="info">
+                <div>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
