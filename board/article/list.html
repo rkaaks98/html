@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>글목록</title>
+        <style>
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            input, textarea {outline: none;}
+
+            #wrapper {
+                width: 800px;
+                height: auto;
+                margin: 0 auto;
+            }
+            /* 헤더 */
+            header {
+                width: 100%;
+                height: 35px;
+            }
+            header h3 {
+                position: relative;
+                top: 10px;
+            }
+            header h3 a {
+                font-weight: bold;
+                font-size: 16px;
+                color: #333;
+            }
+            header p {
+                float: right;
+                position: relative;
+                bottom: 10px;
+            }
+            header p a:nth-of-type(1) {
+                text-decoration: underline;
+            }
+        
+
+            /* 메인 */
+            main {
+                width: 100%;
+                height: auto;
+            }
+            main section {
+                width: 100%;
+                height: auto;
+                margin: 60px auto;
+            }
+            main nav {
+                overflow: hidden;
+                padding: 10px 0;
+            }
+            main nav h1 {
+                font-size: 13px;
+                float: left;
+            }
+            main nav form {
+                float: right;
+            }
+            main nav form input:nth-of-type(1) {
+                width: 200px;
+                height: 26px;
+                border: 1px solid #d7d7d7;
+                text-indent: 6px;
+            }
+            main nav form input:nth-of-type(2) {
+                width: 40px;
+                height: 26px;
+                border: 1px solid #d7d7d7;
+            }
+            main table{}
+            main table tbody{}
+
+
+            
+
+            /* 푸터 */
+            footer {
+                width: 100%;
+                height: auto;
+            }
+            footer p:nth-of-type(1) {
+                color: #777777;
+                float: left;
+            }
+            footer p:nth-of-type(2) {
+                color: #777777;
+                float: right;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h3>
+                    <a href="/board/js/index.html">Board Project</a>
+                </h3>
+                <p>
+                    <a href="/board/user/info.html" class="info">홍길동</a>
+                    님 반갑습니다.
+                    <a href="/board/user/login.html">[로그아웃]</a>
+                </p>
+            </header>
+
+
+            <main>
+                <section>
+                    <nav>
+                        <h1>글목록</h1>             
+                        <form action="#">
+                                <input type="text" name="search" placeholder="제목 키워드, 글쓴이 검색">
+                                <input type="submit" value="검색">
+                            </form>
+                    </nav>
+
+                    <table border="0">
+                        <tbody>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>날짜</th>
+                                <th>조회</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>테스트 제목입니다.[3]</td>
+                                <td>길동이</td>
+                                <td>20-05-12</td>
+                                <td>12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <div class="page">
+                        <a href="#" class="prev">이전</a>
+                        <a href="#" class="1">1</a>
+                        <a href="#" class="2">2</a>
+                        <a href="#" class="3">3</a>
+                        <a href="#" class="next">다음</a>
+                        <a href="#" class="btn">글쓰기</a>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>Copyrightⓒ 김준서(개발에반하다.)</p>
+                <p>v1.0.1</p>
+            </footer>
+        </div>
+    </body>
+</html>
