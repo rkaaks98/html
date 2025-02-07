@@ -76,8 +76,54 @@
                 height: 26px;
                 border: 1px solid #d7d7d7;
             }
-            main table{}
-            main table tbody{}
+            main table{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                border-collapse: collapse;
+                border-top: 2px solid black;
+                border-bottom: 1px solid #999;
+                margin-bottom: 20px;
+            }
+            main table .top{
+                background-color: #e5ecef;
+                height: 42px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                border-bottom: 1px solid #999;
+            }
+            main table .bottom {
+                height: 42px;
+                
+            }
+            main table .bottom td:nth-of-type(2) {
+                text-align: left;
+            }
+
+            
+            main .page {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            main .page a {
+                padding: 8px;
+                background-color: #f2f2f2;
+                display: inline-block;
+                border: 1px solid #d7d7d7;
+            }
+            main .page a:nth-of-type(2) {
+                background-color: #888888;
+                color: white;
+            }
+            main .page a:nth-of-type(6) {
+                position: absolute;
+                right:77px;
+                background-color: #4b545e;
+                color: white;
+            }
+            
+               
 
 
             
@@ -123,7 +169,7 @@
                     </nav>
 
                     <table border="0">
-                        <tbody>
+                        <tbody class="top">
                             <tr>
                                 <th>번호</th>
                                 <th>제목</th>
@@ -131,9 +177,11 @@
                                 <th>날짜</th>
                                 <th>조회</th>
                             </tr>
+                        </tbody>
+                        <tbody class="bottom">
                             <tr>
                                 <td>1</td>
-                                <td>테스트 제목입니다.[3]</td>
+                                <td><a href="/board/article/view.html">테스트 제목입니다.[3]</a></td>
                                 <td>길동이</td>
                                 <td>20-05-12</td>
                                 <td>12</td>
@@ -147,7 +195,7 @@
                         <a href="#" class="2">2</a>
                         <a href="#" class="3">3</a>
                         <a href="#" class="next">다음</a>
-                        <a href="#" class="btn">글쓰기</a>
+                        <a href="/board/article/write.html" class="btn">글쓰기</a>
                     </div>
                 </section>
             </main>
