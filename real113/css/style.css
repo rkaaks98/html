@@ -20,7 +20,7 @@ input, textarea {outline: none;}
 header {
     width: 100%;
     height: 80px;
-   background: url(../images/header_bg.gif);
+   background: url(/real113/images/header_bg.gif);
 }
 header > div {
     position: relative;
@@ -78,7 +78,7 @@ header .latest a:nth-child(2) {
     left: 6px;
 }
 header .latest a:nth-child(2) .::before {
-    content: url(../images/ico_latest.gif);
+    content: url(/real113/images/ico_latest.gif);
     display: inline-block;
 }
 
@@ -100,7 +100,7 @@ main > div > .banner{
     height: 320px;
     box-sizing: border-box;
     float: left;
-    background: url(../images/main_banner_bg.jpg);
+    background: url(/real113/images/main_banner_bg.jpg);
     overflow: hidden;
 }
 main div .banner img {
