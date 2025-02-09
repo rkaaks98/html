@@ -2,10 +2,133 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>글보기</title>
+
+        <style>
+            /* 초기화 */
+            * {
+                margin: 0;
+                padding: 0;
+                font: normal 12px '고딕';
+            }
+
+            ul, ol {list-style: none;}
+            a {text-decoration: none; color: black;}
+            input, textarea {outline: none;}
+
+            #wrapper {
+                width: 800px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+
+            /* 헤더 */
+            header {
+                width: 100%;
+                height: 35px;
+            }
+            header h3 {
+                position: relative;
+                top: 10px;
+            }
+            header h3 a {
+                font-weight: bold;
+                font-size: 16px;
+                color: #333;
+            }
+            header p {
+                float: right;
+                position: relative;
+                bottom: 10px;
+            }
+            header p a:nth-of-type(1) {
+                text-decoration: underline;
+            }
+            
+        
+            /*메인*/
+            main section {
+                width: 100%;
+                height: auto;
+                margin-top: 60px;
+            }
+            main section nav {
+                margin-bottom: 10px;
+            }
+            main section h1 {
+                font-size: 13px;
+            }
+            main section .head {
+                width: 100%;
+                height: auto;
+                border-top: 2px solid black ;
+                border-bottom: 1px solid #e9e9e9;
+            }
+            
+               
+
+
+            
+
+            /* 푸터 */
+            footer {
+                width: 100%;
+                height: auto;
+            }
+            footer p:nth-of-type(1) {
+                color: #777777;
+                float: left;
+            }
+            footer p:nth-of-type(2) {
+                color: #777777;
+                float: right;
+            }
+        </style>
         
     </head>
     <body>
-        
+        <div id="wrapper">
+            <header>
+                <h3>
+                    <a href="/board/js/index.html">Board Project</a>
+                </h3>
+                <p>
+                    <a href="/board/user/info.html" class="info">홍길동</a>
+                    님 반갑습니다.
+                    <a href="/board/user/login.html">[로그아웃]</a>
+                </p>
+            </header>
+
+
+            <main>
+                <section>
+                    <nav><h1> 글보기</h1></nav>
+                    <table class="head">
+                        <tbody>
+                            <tr>
+                                <th>제목</th>
+                                 <td>제목입니다.</td>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                 <td><a href="#">2020년 상반기 매출자료.xls</a> 7회 다운로드</td>
+                            </tr>
+                            <tr>
+                                <th>내용</th>
+                                 <td>내용 샘플입니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </section>
+            </main>
+
+
+            <footer>
+                <p>Copyrightⓒ 김준서(개발에반하다.)</p>
+                <p>v1.0.1</p>
+            </footer>
+        </div>
     </body>
 </html>
