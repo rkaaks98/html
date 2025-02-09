@@ -1,613 +1,613 @@
-             /* 초기화 */
-            * {
-                margin: 0;
-                padding: 0;
-                font: normal 12px '고딕';
-            }
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
 
-            ul, ol {list-style: none;}
-            a {text-decoration: none; color: black;}
-            input, textarea {outline: none;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: black;}
+input, textarea {outline: none;}
 
-            #container {
-                width: 100%;
-                height: 100%;
-                border: 1px solid red;
-                box-sizing: border-box;
-            }
-
-
-
-            /*헤더*/
-            header {
-                width: 100%;
-                height: auto;
-                border: 1px solid black;
-                box-sizing: border-box;
-            }
-            .top {
-                width: 100%;
-                height: 35px;
-                border: 1px solid #777;
-                box-sizing: border-box;
-            }
-            .top div {
-                width: 1100px;
-                height: 100%;
-                
-                box-sizing: border-box;
-                margin: 0 auto;
-                padding-top: 6px;
-            }
-            .top div p {
-                float: right;
-            }
+#container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
 
 
 
-
-            .middle {
-                width: 100%;
-                height: 100px;
-                
-                box-sizing: border-box;
-            }
-            .middle article {
-                width: 1100px;
-                height: 100%;
-                
-                box-sizing: border-box;
-                margin: 0 auto;
-            }
-            .middle article a:nth-of-type(1){
-                position: relative;
-                left: 10px;
-                top: 35px;
-            }
-            .middle article a:nth-of-type(1) span:nth-of-type(1) {
-                color: orangered;
-                font-size: 15px;
-            }
-            .middle article a:nth-of-type(2) {
-                position: relative;
-                left: 137px;
-                top: 20px;
-            }
-            .middle article a:nth-of-type(3) {
-                position: relative;
-                left: 280px;
-                top: 16px;
-            }
-
-
-
-            .bot {
-                width: 100%;
-                height: 55px;
-               
-                box-sizing: border-box;
-                background-color: #40382e; 
-            }
-            .bot div {
-                width: 1100px;
-                height: 100%;
-                
-                
-                margin: 0 auto; 
-                
-            }
-            .bot div ul {
-                width: 100%;
-                height: 100%;
-                
-               
-                padding-left: 10px;
-            }
-            .bot div ul li {
-                float: left;
-                width: 11%;
-                height: 100%;
-               
-            }
-            .bot div ul a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                line-height: 54px;
-                font-size: 15px;
-                font-weight: bold;
-                color: #fff;
-            }
-            .bot div ul a:hover {
-                color: orangered;
-            }
+/*헤더*/
+header {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.top {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+}
+.top div {
+    width: 1100px;
+    height: 100%;
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+.top div p {
+    float: right;
+}
 
 
 
 
-            /*메인*/
-
-            main {
-                width: 100%;
-                height: auto;
-                
-                box-sizing: border-box;
-            }
-            .slider {
-                width: 100%;
-                height: 350px;
-                
-                box-sizing: border-box;
-                background-color: #ffeed4;;
-            }
-            .slider div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto;
-                background-image: url('/foodshop/images/slider_banner1.jpg')
-            }
-            .go {
-                width: 100%;
-                height: 520px;
-                
-                box-sizing: border-box;
-            }
-            .go div {
-                width: 1100px;
-                height: 100%;
-                
-                box-sizing: border-box;
-                overflow: hidden;
-                margin: 0 auto;
-                padding: 30px 10px;
-            }
-            .go div article {
-                float: left;
-                
-                box-sizing: border-box;
-            }
-            .go div article:nth-of-type(1) {
-                width: 412px;
-                height: 450px;
-                background-image: url('/foodshop/images/main_go_bg1.png');
-                padding-top: 40px;
-                padding-left: 20px;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(1) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(1) a {
-                color: #ff6312;
-                font-size: 18px;
-                font-weight: bold;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(2) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 25px;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(2) a {
-                color: white;
-                font-size: 22px;
-
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(3) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(3) a {
-                color: white;
-                font-size: 13px;
-            }
-            .go div article:nth-of-type(1) ul li:nth-of-type(4) {
-                width: 100%;
-                height: 100%;
-            }
-            .go div article:nth-of-type(2) {
-                width: 322px;
-                height: 220px;
-                box-sizing: border-box;
-                margin-left: 10px;
-                float: left;
-                background-image: url('/foodshop/images/main_go_bg2.png');
-                padding-top: 40px;
-                padding-left: 20px;
-            }
-            .go div article:nth-of-type(2) ul li:nth-of-type(1) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-            .go div article:nth-of-type(2) ul li:nth-of-type(1) a {
-                color: #ff6312;
-                font-size: 18px;
-                font-weight: bold;
-            }
-            .go div article:nth-of-type(2) ul li:nth-of-type(2) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .go div article:nth-of-type(2) ul li:nth-of-type(2) a {
-                color: black;
-                font-size: 22px;
-            }
-            .go div article:nth-of-type(3) {
-                width: 322px;
-                height: 220px;
-                box-sizing: border-box;
-                float: right;
-                background-image: url('/foodshop/images/main_go_bg3.png');
-                padding-top: 40px;
-                padding-left: 20px;
-            }
-            .go div article:nth-of-type(3) ul li:nth-of-type(1) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-            .go div article:nth-of-type(3) ul li:nth-of-type(1) a {
-                color: #ff6312;
-                font-size: 18px;
-                font-weight: bold;
-            }
-            .go div article:nth-of-type(3) ul li:nth-of-type(2) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .go div article:nth-of-type(3) ul li:nth-of-type(2) a {
-                color: white;
-                font-size: 22px;
-            }
-            .go div article:nth-of-type(4) {
-                width: 322px;
-                height: 220px;
-                box-sizing: border-box;
-                margin-left: 10px;
-                float: left;
-                margin-top: 10px;
-                background-image: url('/foodshop/images/main_go_bg4.png');
-                padding-top: 40px;
-                padding-left: 20px;
-            }
-            .go div article:nth-of-type(4) ul li:nth-of-type(1) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-            .go div article:nth-of-type(4) ul li:nth-of-type(1) a {
-                color: #ff6312;
-                font-size: 18px;
-                font-weight: bold;
-            }
-            .go div article:nth-of-type(4) ul li:nth-of-type(2) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .go div article:nth-of-type(4) ul li:nth-of-type(2) a {
-                color: white;
-                font-size: 22px;
-            }
-            .go div article:nth-of-type(5) {
-                width: 322px;
-                height: 220px;
-                box-sizing: border-box;
-                float: right;
-                margin-top: 10px;
-                background-image: url('/foodshop/images/main_go_bg5.png');
-                padding-top: 40px;
-                padding-left: 20px;
-            }
-            .go div article:nth-of-type(5) ul li:nth-of-type(1) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 20px;
-            }
-            .go div article:nth-of-type(5) ul li:nth-of-type(1) a {
-                color: #ff6312;
-                font-size: 18px;
-                font-weight: bold;
-            }
-            .go div article:nth-of-type(5) ul li:nth-of-type(2) {
-                width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
-            }
-            .go div article:nth-of-type(5) ul li:nth-of-type(2) a {
-                color: black;
-                font-size: 22px;
-            }
-            .one {
-                width: 100%;
-                height: 190px;
-                background-image: url(/foodshop/images/oneday_bg.png);
-                box-sizing: border-box;
-                background-position: 50%center;
-            }
-            .one div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto;
-                
-            }
-            .one div a {
-                position: relative;
-                top: 25%;
-            }
-            .healthy {
-                width: 100%;
-                height: 520px;
-                box-sizing: border-box;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            .healthy div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto; 
-                text-align: center;
-            }
-            .healthy div ul {
-                
-                width: 100%;
-                height: auto;
-                margin-top: 36px;
-                box-sizing: border-box;
-                
-            }
-            
-            .healthy div ul li {
-                width: 100%;
-                height: 100%;
-                box-sizing: border-box;
-                padding: 10px;
-                
-                
-            }
-            .healthy div ul li a {
-                display: block;
-                width: 255px;
-                height: 100%;
-                box-sizing: border-box;
-                float: left;
-                
-            }
-            .healthy div ul li a:nth-of-type(1) {
-                margin-right: 20px;
-            }
-            .healthy div ul li a:nth-of-type(2) {
-                margin-right: 20px;
-            }
-            .healthy div ul li a:nth-of-type(3) {
-                margin-right: 20px;
-            }
-            .healthy div ul li a:nth-of-type(4) {
-                
-            }
-            .healthy div ul li a img {
-                width: 100%;
-                height: 170px;
-                object-fit: cover;
-            }
-            .healthy div ul li a h1 {
-                color: black;
-                font-size: 20px;
-                margin-top: 20px;
-            }
-            .healthy div ul li a p {
-                color: #959595;
-                line-height: 20px;
-                margin-top: 10px;
-                font-weight: bold;
-                font-size: 13px;
-            }
-            .healthy div ul li a h2 {
-                color: #ff6a00;
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 20px;
-            }
-            .healthy div .hall {
-               box-shadow: 0px 2px 2px #999;
-                width: 300px;
-                height: 50px;
-                font-size: 15px;
-                text-align: center;
-                border: 1px solid #efefef;
-                font-weight: bold;
-                display: flex;
-                margin: 56 auto;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                left: 400px;
-                top: 50px;
-            }
-            
-            .premium {
-                width: 100%;
-                height: 190px;
-                background-image: url(/foodshop/images/premium_bg.png);
-                box-sizing: border-box;
-                background-position: 50%center;
-            }
-            .premium div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto;
-                
-            }
-            .premium div a {
-                position: relative;
-                top: 25%;
-                left: 25%;
-            }
-            .seafood {
-                width: 100%;
-                height: 520px;
-                box-sizing: border-box;
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-            .seafood div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto; 
-                text-align: center;
-            }
-            .seafood div ul {
-                width: 100%;
-                height: auto;
-                margin-top: 36px;
-                box-sizing: border-box;
-            }
-            
-            .seafood div ul li {
-                width: 100%;
-                height: 100%;
-                box-sizing: border-box;
-                padding: 10px;
-                
-            }
-            .seafood div ul li a {
-                display: block;
-                width: 255px;
-                height: 100%;
-                box-sizing: border-box;
-                float: left;
-            }
-            .seafood div ul li a:nth-of-type(1) {
-                margin-right: 20px;
-            }
-            .seafood div ul li a:nth-of-type(2) {
-                margin-right: 20px;
-            }
-            .seafood div ul li a:nth-of-type(3) {
-                margin-right: 20px;
-            }
-            .seafood div ul li a:nth-of-type(4) {
-                
-            }
-            .seafood div ul li a img {
-                width: 100%;
-                height: 170px;
-                object-fit: cover;
-            }
-            
-            .seafood div ul li a img {
-                width: 100%;
-                height: 170px;
-                object-fit: cover;
-            }
-            .seafood div ul li a h1 {
-                color: black;
-                font-size: 20px;
-                margin-top: 20px;
-            }
-            .seafood div ul li a p {
-                color: #959595;
-                line-height: 20px;
-                margin-top: 10px;
-                font-weight: bold;
-                font-size: 13px;
-            }
-            .seafood div ul li a h2 {
-                color: #ff6a00;
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 20px;
-            }
-            .seafood div .sall {
-               box-shadow: 0px 2px 2px #999;
-                width: 300px;
-                height: 50px;
-                font-size: 15px;
-                text-align: center;
-                border: 1px solid #efefef;
-                font-weight: bold;
-                display: flex;
-                margin: 56 auto;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                left: 400px;
-                top: 50px;
-            }
+.middle {
+    width: 100%;
+    height: 100px;
+    
+    box-sizing: border-box;
+}
+.middle article {
+    width: 1100px;
+    height: 100%;
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.middle article a:nth-of-type(1){
+    position: relative;
+    left: 10px;
+    top: 35px;
+}
+.middle article a:nth-of-type(1) span:nth-of-type(1) {
+    color: orangered;
+    font-size: 15px;
+}
+.middle article a:nth-of-type(2) {
+    position: relative;
+    left: 137px;
+    top: 20px;
+}
+.middle article a:nth-of-type(3) {
+    position: relative;
+    left: 280px;
+    top: 16px;
+}
 
 
-            
 
-            /*푸터*/
-            footer {
-                width: 100%;
-                height: auto;
-               
-                box-sizing: border-box;
-            }
-            .manage {
-                width: 100%;
-                height: 50px;
-                
-                box-sizing: border-box;
-                background-color: #626262;
-            }
-            .manage div {
-                width: 1100px;
-                height: 100%;
-                
-                box-sizing: border-box;
-                margin: 0 auto;
-                padding-top: 12px;
-            }
-            .manage div p {
-                width: 100%;
-                height: 100%;
-            }
-            .manage div p a {
-                font-weight: bold;
-                color: white;
-                font-size: 14px;
-                margin-left: 10px;
-            }
-            .manage div p a:nth-of-type(1) {
-                color: orangered;
-            }
+.bot {
+    width: 100%;
+    height: 55px;
+   
+    box-sizing: border-box;
+    background-color: #40382e; 
+}
+.bot div {
+    width: 1100px;
+    height: 100%;
+    
+    
+    margin: 0 auto; 
+    
+}
+.bot div ul {
+    width: 100%;
+    height: 100%;
+    
+   
+    padding-left: 10px;
+}
+.bot div ul li {
+    float: left;
+    width: 11%;
+    height: 100%;
+   
+}
+.bot div ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 54px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.bot div ul a:hover {
+    color: orangered;
+}
 
-            .info {
-                width: 100%;
-                height: 170px;
-                
-                box-sizing: border-box;
-                background-color: #434343;
-            }
-            .info div {
-                width: 1100px;
-                height: 100%;
-                box-sizing: border-box;
-                margin: 0 auto;
-                padding-top: 30px;
-            }
-            .info div p {
-                margin-left: 10px;
-                color: #aca9a9;
-                font-size: 15px;
-                font-weight: bold;
-                line-height: 26px;
-            }
-            .info div img {
-                position: relative;
-                left: 79%;
-                bottom: 80%;
-            }
-      
+
+
+
+/*메인*/
+
+main {
+    width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
+}
+.slider {
+    width: 100%;
+    height: 350px;
+    
+    box-sizing: border-box;
+    background-color: #ffeed4;;
+}
+.slider div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: url('/foodshop/images/slider_banner1.jpg')
+}
+.go {
+    width: 100%;
+    height: 520px;
+    
+    box-sizing: border-box;
+}
+.go div {
+    width: 1100px;
+    height: 100%;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+.go div article {
+    float: left;
+    
+    box-sizing: border-box;
+}
+.go div article:nth-of-type(1) {
+    width: 412px;
+    height: 450px;
+    background-image: url('/foodshop/images/main_go_bg1.png');
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(1) a {
+    color: #ff6312;
+    font-size: 18px;
+    font-weight: bold;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(2) a {
+    color: white;
+    font-size: 22px;
+
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(3) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(3) a {
+    color: white;
+    font-size: 13px;
+}
+.go div article:nth-of-type(1) ul li:nth-of-type(4) {
+    width: 100%;
+    height: 100%;
+}
+.go div article:nth-of-type(2) {
+    width: 322px;
+    height: 220px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    float: left;
+    background-image: url('/foodshop/images/main_go_bg2.png');
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.go div article:nth-of-type(2) ul li:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.go div article:nth-of-type(2) ul li:nth-of-type(1) a {
+    color: #ff6312;
+    font-size: 18px;
+    font-weight: bold;
+}
+.go div article:nth-of-type(2) ul li:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.go div article:nth-of-type(2) ul li:nth-of-type(2) a {
+    color: black;
+    font-size: 22px;
+}
+.go div article:nth-of-type(3) {
+    width: 322px;
+    height: 220px;
+    box-sizing: border-box;
+    float: right;
+    background-image: url('/foodshop/images/main_go_bg3.png');
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.go div article:nth-of-type(3) ul li:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.go div article:nth-of-type(3) ul li:nth-of-type(1) a {
+    color: #ff6312;
+    font-size: 18px;
+    font-weight: bold;
+}
+.go div article:nth-of-type(3) ul li:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.go div article:nth-of-type(3) ul li:nth-of-type(2) a {
+    color: white;
+    font-size: 22px;
+}
+.go div article:nth-of-type(4) {
+    width: 322px;
+    height: 220px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+    background-image: url('/foodshop/images/main_go_bg4.png');
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.go div article:nth-of-type(4) ul li:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.go div article:nth-of-type(4) ul li:nth-of-type(1) a {
+    color: #ff6312;
+    font-size: 18px;
+    font-weight: bold;
+}
+.go div article:nth-of-type(4) ul li:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.go div article:nth-of-type(4) ul li:nth-of-type(2) a {
+    color: white;
+    font-size: 22px;
+}
+.go div article:nth-of-type(5) {
+    width: 322px;
+    height: 220px;
+    box-sizing: border-box;
+    float: right;
+    margin-top: 10px;
+    background-image: url('/foodshop/images/main_go_bg5.png');
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.go div article:nth-of-type(5) ul li:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.go div article:nth-of-type(5) ul li:nth-of-type(1) a {
+    color: #ff6312;
+    font-size: 18px;
+    font-weight: bold;
+}
+.go div article:nth-of-type(5) ul li:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.go div article:nth-of-type(5) ul li:nth-of-type(2) a {
+    color: black;
+    font-size: 22px;
+}
+.one {
+    width: 100%;
+    height: 190px;
+    background-image: url(/foodshop/images/oneday_bg.png);
+    box-sizing: border-box;
+    background-position: 50%center;
+}
+.one div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+.one div a {
+    position: relative;
+    top: 25%;
+}
+.healthy {
+    width: 100%;
+    height: 520px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.healthy div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    text-align: center;
+}
+.healthy div ul {
+    
+    width: 100%;
+    height: auto;
+    margin-top: 36px;
+    box-sizing: border-box;
+    
+}
+
+.healthy div ul li {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    
+}
+.healthy div ul li a {
+    display: block;
+    width: 255px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    
+}
+.healthy div ul li a:nth-of-type(1) {
+    margin-right: 20px;
+}
+.healthy div ul li a:nth-of-type(2) {
+    margin-right: 20px;
+}
+.healthy div ul li a:nth-of-type(3) {
+    margin-right: 20px;
+}
+.healthy div ul li a:nth-of-type(4) {
+    
+}
+.healthy div ul li a img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.healthy div ul li a h1 {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.healthy div ul li a p {
+    color: #959595;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.healthy div ul li a h2 {
+    color: #ff6a00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.healthy div .hall {
+   box-shadow: 0px 2px 2px #999;
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #efefef;
+    font-weight: bold;
+    display: flex;
+    margin: 56 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+.premium {
+    width: 100%;
+    height: 190px;
+    background-image: url(/foodshop/images/premium_bg.png);
+    box-sizing: border-box;
+    background-position: 50%center;
+}
+.premium div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+.premium div a {
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+.seafood {
+    width: 100%;
+    height: 520px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.seafood div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    text-align: center;
+}
+.seafood div ul {
+    width: 100%;
+    height: auto;
+    margin-top: 36px;
+    box-sizing: border-box;
+}
+
+.seafood div ul li {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.seafood div ul li a {
+    display: block;
+    width: 255px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.seafood div ul li a:nth-of-type(1) {
+    margin-right: 20px;
+}
+.seafood div ul li a:nth-of-type(2) {
+    margin-right: 20px;
+}
+.seafood div ul li a:nth-of-type(3) {
+    margin-right: 20px;
+}
+.seafood div ul li a:nth-of-type(4) {
+    
+}
+.seafood div ul li a img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.seafood div ul li a img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.seafood div ul li a h1 {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.seafood div ul li a p {
+    color: #959595;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.seafood div ul li a h2 {
+    color: #ff6a00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.seafood div .sall {
+   box-shadow: 0px 2px 2px #999;
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #efefef;
+    font-weight: bold;
+    display: flex;
+    margin: 56 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+
+
+
+/*푸터*/
+footer {
+    width: 100%;
+    height: auto;
+   
+    box-sizing: border-box;
+}
+.manage {
+    width: 100%;
+    height: 50px;
+    
+    box-sizing: border-box;
+    background-color: #626262;
+}
+.manage div {
+    width: 1100px;
+    height: 100%;
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+.manage div p {
+    width: 100%;
+    height: 100%;
+}
+.manage div p a {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.manage div p a:nth-of-type(1) {
+    color: orangered;
+}
+
+.info {
+    width: 100%;
+    height: 170px;
+    
+    box-sizing: border-box;
+    background-color: #434343;
+}
+.info div {
+    width: 1100px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.info div p {
+    margin-left: 10px;
+    color: #aca9a9;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.info div img {
+    position: relative;
+    left: 79%;
+    bottom: 80%;
+}
